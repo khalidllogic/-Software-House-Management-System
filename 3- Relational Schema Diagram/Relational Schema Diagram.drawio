@@ -1,0 +1,245 @@
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram id="Normalized_Horizontal_Schema" name="Normalized Schema">
+    <mxGraphModel dx="2800" dy="1600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3600" pageHeight="3200" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- 1. Client -->
+        <mxCell id="row_client" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#e1d5e7; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;10&quot;&gt;Client&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Client_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;First_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Middle_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Last_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Street&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;City&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Country&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;PostalCode&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Client_Type&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Registration_Date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="1050" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 2. Client_Phone -->
+        <mxCell id="row_client_phone" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#e1d5e7; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;Client_Phone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Client_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Phone&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="80" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 3. Client_Email -->
+        <mxCell id="row_client_email" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#e1d5e7; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;Client_Email&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Client_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Email&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="80" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 4. SupportTicket -->
+        <mxCell id="row_ticket" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#e1d5e7; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;SupportTicket&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Ticket_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Ticket_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Subject&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Description&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Priority&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Client_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="190" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 5. Contract -->
+        <mxCell id="row_contract" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;Contract&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Contract_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Contract_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Contract_Value&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Contract_Terms&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Start_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;End_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Client_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 6. Project -->
+        <mxCell id="row_project" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;Project&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Project_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Start_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;End_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Description&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Contract_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="850" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 7. ProjectPhase -->
+        <mxCell id="row_projectphase" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#fff2cc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;ProjectPhase&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Project_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Phase_Name&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Phase_ID&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Phase_StartDate&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Phase_EndDate&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Phase_Status&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="420" width="700" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 8. Budget -->
+        <mxCell id="row_budget" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;Budget&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Budget_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Total_Amount&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Allocated_Amount&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Fiscal_Year&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="530" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 9. Meeting -->
+        <mxCell id="row_meeting" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;Meeting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Meeting_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Meeting_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Meeting_Time&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Location&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Agenda&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="530" width="650" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 10. Document (Inlined Subclasses) -->
+        <mxCell id="row_document" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;Document&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Document_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Document_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Document_Type&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Creation_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;File_Path&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="640" width="750" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 11. Release -->
+        <mxCell id="row_release" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;Release&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Release_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Release_Version&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Release_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Release_Notes&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="640" width="700" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 12. Test -->
+        <mxCell id="row_test" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;Test&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Test_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Test_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Test_Type&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Test_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Result&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="750" width="650" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 13. Bug -->
+        <mxCell id="row_bug" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;7&quot;&gt;Bug&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Bug_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Bug_Title&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Bug_Description&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Severity&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Discovery_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Test_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="750" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 14. BugReport -->
+        <mxCell id="row_bugreport" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#fff2cc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;BugReport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Bug_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Report_Date&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Report_ID&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Reported_By&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Report_Details&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="750" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 15. Task -->
+        <mxCell id="row_task" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;8&quot;&gt;Task&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Task_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Task_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Task_Description&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Start_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;End_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Priority&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="860" width="900" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 16. Technology -->
+        <mxCell id="row_tech" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;Technology&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Technology_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Technology_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Technology_Type&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Version&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Description&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="860" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 17. Task_Technology -->
+        <mxCell id="row_task_tech" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;Task_Technology&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Task_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Technology_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="860" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 18. Department -->
+        <mxCell id="row_dept" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#d5e8d4; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;Department&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Department_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Department_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Location&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Phone&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Manager_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="990" width="650" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 19. Role -->
+        <mxCell id="row_role" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#d5e8d4; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;Role&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Role_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Role_Title&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Role_Description&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Min_Salary&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Max_Salary&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="990" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 20. Employee (Inlined Subclasses) -->
+        <mxCell id="row_emp" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#d5e8d4; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;14&quot;&gt;Employee&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Employee_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;First_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Middle_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Last_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Street&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;City&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Country&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Email&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Hire_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Salary&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Birth_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Job_Title&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Department_ID (FK)&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Role_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1110" width="1450" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 21. Employee_Phone -->
+        <mxCell id="row_emp_phone" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#d5e8d4; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;Employee_Phone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Employee_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Phone&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="1110" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 22. TaskAssignment -->
+        <mxCell id="row_assignment" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;TaskAssignment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Assignment_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Assignment_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Hours_Worked&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Task_ID (FK)&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Employee_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1230" width="750" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 23. Attendance -->
+        <mxCell id="row_attendance" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#fff2cc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;Attendance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Employee_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Attendance_Date&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Attendance_ID&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Check_In&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Check_Out&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="1230" width="700" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 24. Notification (Inlined Subclasses) -->
+        <mxCell id="row_notif" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#fff2cc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;Notification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Employee_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Notification_Date&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Notification_ID&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Message&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Type&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1350" width="700" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 25. Skill -->
+        <mxCell id="row_skill" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#d5e8d4; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;Skill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Skill_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Skill_Name&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Skill_Category&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Skill_Level&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Description&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1350" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 26. Employee_Skill -->
+        <mxCell id="row_emp_skill" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#d5e8d4; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;2&quot;&gt;Employee_Skill&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Employee_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Skill_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="1350" width="300" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 27. Invoice -->
+        <mxCell id="row_invoice" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;Invoice&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Invoice_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Invoice_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Due_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Status&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1470" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 28. Payment -->
+        <mxCell id="row_payment" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#fff2cc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;5&quot;&gt;Payment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Invoice_ID (FK)&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Payment_Date&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Payment_ID&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Amount&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Payment_Method&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1470" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 29. Expense -->
+        <mxCell id="row_expense" value="&lt;table border=&quot;1&quot; style=&quot;border-collapse:collapse; width:100%; text-align:center; font-family:sans-serif;&quot;&gt;&lt;tr style=&quot;background:#dae8fc; font-weight:bold;&quot;&gt;&lt;td colspan=&quot;6&quot;&gt;Expense&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px; font-weight:bold;&quot;&gt;&lt;u&gt;Expense_ID&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Expense_Date&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Amount&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Expense_Type&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Description&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Project_ID (FK)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1590" width="700" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Foreign Key Clean Arrows (Orthogonal Side Routing) -->
+        <mxCell id="arr_cp_c" edge="1" parent="1" source="row_client_phone" target="row_client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_ce_c" edge="1" parent="1" source="row_client_email" target="row_client_phone" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_tkt_c" edge="1" parent="1" source="row_ticket" target="row_client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.9;exitY=0;entryX=0.7;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_cntr_c" edge="1" parent="1" source="row_contract" target="row_client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.9;exitY=0;entryX=0.5;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_prj_cntr" edge="1" parent="1" source="row_project" target="row_contract" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.9;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_phase_prj" edge="1" parent="1" source="row_projectphase" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_bdg_prj" edge="1" parent="1" source="row_budget" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_mtg_prj" edge="1" parent="1" source="row_meeting" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.3;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_doc_prj" edge="1" parent="1" source="row_document" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_rel_prj" edge="1" parent="1" source="row_release" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.4;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_tst_prj" edge="1" parent="1" source="row_test" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_bug_tst" edge="1" parent="1" source="row_bug" target="row_test" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_rep_bug" edge="1" parent="1" source="row_bugreport" target="row_bug" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_tsk_prj" edge="1" parent="1" source="row_task" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.9;exitY=0;entryX=0.2;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_tt_tsk" edge="1" parent="1" source="row_task_tech" target="row_task" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_tt_tch" edge="1" parent="1" source="row_task_tech" target="row_tech" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.5;exitY=1;entryX=0.5;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_emp_dept" edge="1" parent="1" source="row_emp" target="row_dept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_emp_role" edge="1" parent="1" source="row_emp" target="row_role" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.95;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_dept_mgr" edge="1" parent="1" source="row_dept" target="row_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=1;entryX=0.1;entryY=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_ep_emp" edge="1" parent="1" source="row_emp_phone" target="row_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_asg_tsk" edge="1" parent="1" source="row_assignment" target="row_task" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.7;exitY=0;entryX=0.3;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_asg_emp" edge="1" parent="1" source="row_assignment" target="row_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.9;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_atn_emp" edge="1" parent="1" source="row_attendance" target="row_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.2;exitY=0;entryX=0.4;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_ntf_emp" edge="1" parent="1" source="row_notif" target="row_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.2;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_es_emp" edge="1" parent="1" source="row_emp_skill" target="row_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.2;exitY=0;entryX=0.6;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_es_skl" edge="1" parent="1" source="row_emp_skill" target="row_skill" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_inv_prj" edge="1" parent="1" source="row_invoice" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_pay_inv" edge="1" parent="1" source="row_payment" target="row_invoice" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr_exp_prj" edge="1" parent="1" source="row_expense" target="row_project" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#4d4d4d;strokeWidth=1.5;endArrow=classic;exitX=0.85;exitY=0;entryX=0.1;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
